@@ -5,7 +5,6 @@ import com.vnator.explosivetech.blocks.BlockTileEntity;
 import com.vnator.explosivetech.blocks.ores.PhosphorusOre;
 import com.vnator.explosivetech.blocks.ores.SaltpeterOre;
 import com.vnator.explosivetech.blocks.ores.SulfurOre;
-import com.vnator.explosivetech.items.Saltpeter;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;

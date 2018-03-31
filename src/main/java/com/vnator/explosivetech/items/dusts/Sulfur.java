@@ -1,5 +1,6 @@
-package com.vnator.explosivetech.items;
+package com.vnator.explosivetech.items.dusts;
 
+import com.vnator.explosivetech.items.ItemBase;
 import net.minecraft.item.ItemStack;
 
 public class Sulfur extends ItemBase {
