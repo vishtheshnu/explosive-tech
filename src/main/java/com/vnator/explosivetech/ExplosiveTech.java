@@ -24,7 +24,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(modid = ExplosiveTech.MODID, name = ExplosiveTech.NAME, version = ExplosiveTech.VERSION)
 public class ExplosiveTech
 {
-    public static final String MODID = "explosive-tech";
+    public static final String MODID = "explosivetech";
     public static final String NAME = "Explosive Tech";
     public static final String VERSION = "1.0";
 
@@ -44,7 +44,7 @@ public class ExplosiveTech
         logger = event.getModLog();
         System.out.println(NAME+" is loading!");
         proxy.preInit(event);
-       // NetworkRegistry.INSTANCE.registerGuiHandler(this, new ModGuiHandler());
+       //NetworkRegistry.INSTANCE.registerGuiHandler(this, new ModGuiHandler());
     }
 
     @EventHandler

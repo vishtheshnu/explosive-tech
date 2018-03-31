@@ -1,9 +1,10 @@
-package com.vnator.explosivetech.blocks;
+package com.vnator.explosivetech.blocks.ores;
 
+import com.vnator.explosivetech.blocks.BlockBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class BlockOre extends BlockBase{
+public class BlockOre extends BlockBase {
 
 	public BlockOre(String name){
 		super(Material.ROCK, name);

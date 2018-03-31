@@ -2,6 +2,10 @@ package com.vnator.explosivetech;
 
 import com.vnator.explosivetech.blocks.BlockBase;
 import com.vnator.explosivetech.blocks.BlockTileEntity;
+import com.vnator.explosivetech.blocks.ores.PhosphorusOre;
+import com.vnator.explosivetech.blocks.ores.SaltpeterOre;
+import com.vnator.explosivetech.blocks.ores.SulfurOre;
+import com.vnator.explosivetech.items.Saltpeter;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -16,22 +20,20 @@ public class ModBlocks {
 	public static final List<Item> blockItemList = new ArrayList<Item>();
 	public static final List<BlockTileEntity> blockTEList = new ArrayList<BlockTileEntity>();
 
+	public static SulfurOre sulfurOre = new SulfurOre();
+	public static SaltpeterOre saltpeterOre = new SaltpeterOre();
+	public static PhosphorusOre phosphorusOre = new PhosphorusOre();
 
     public static void register(RegistryEvent.Register<Block> event){
 		event.getRegistry().registerAll(blockList.toArray(new BlockBase[0]));
+		System.out.println("registering blocks; # blocks: "+blockList.size());
 		for(BlockTileEntity te : blockTEList){
 			GameRegistry.registerTileEntity(te.getTileEntityClass(), te.getRegistryName().toString());
 		}
-		//GameRegistry.registerTileEntity(counter.getTileEntityClass(), counter.getRegistryName().toString());
     }
 
     public static void registerItemBlocks(RegistryEvent.Register<Item> event){
 		event.getRegistry().registerAll(blockItemList.toArray(new Item[0]));
-		/*
-		for(BlockBase b : blockList){
-			event.getRegistry().register(b.createItemBlock());
-		}
-		*/
     }
 
     public static void registerModels(){
