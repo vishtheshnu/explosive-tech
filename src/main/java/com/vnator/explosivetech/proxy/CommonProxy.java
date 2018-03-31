@@ -1,6 +1,7 @@
 package com.vnator.explosivetech.proxy;
 
 import com.vnator.explosivetech.ExplosiveTech;
+import com.vnator.explosivetech.entities.EntityCherryBomb;
 import com.vnator.explosivetech.entities.EntityMiningStick;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -25,6 +26,7 @@ public class CommonProxy {
         CapabilityManager.INSTANCE.register(IMoney.class, new MoneyStorage(), new MoneyFactory());
         CapabilityManager.INSTANCE.register(ILedger.class, new LedgerStorage(), new LedgerFactory());
         */
+		EntityRegistry.registerModEntity(new ResourceLocation("cherrybomb"), EntityCherryBomb.class, "cherrybomb", 0, ExplosiveTech.instance, 64, 10, true);
 		EntityRegistry.registerModEntity(new ResourceLocation("miningstick"), EntityMiningStick.class, "miningstick", 0, ExplosiveTech.instance, 64, 10, true);
     }
 

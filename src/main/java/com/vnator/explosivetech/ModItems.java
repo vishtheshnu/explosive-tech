@@ -5,6 +5,7 @@ import com.vnator.explosivetech.items.dusts.FirePowder;
 import com.vnator.explosivetech.items.dusts.Phosphorus;
 import com.vnator.explosivetech.items.dusts.Saltpeter;
 import com.vnator.explosivetech.items.dusts.Sulfur;
+import com.vnator.explosivetech.items.entities.CherryBomb;
 import com.vnator.explosivetech.items.entities.MiningStick;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -22,6 +23,7 @@ public class ModItems {
 	public static Saltpeter saltpeter = new Saltpeter();
 	public static FirePowder firePowder = new FirePowder();
 	public static MiningStick miningStick = new MiningStick();
+	public static CherryBomb cherryBomb = new CherryBomb();
 	public static Magnet magnet = new Magnet();
 
 	public static void registerItems(RegistryEvent.Register<Item> event){

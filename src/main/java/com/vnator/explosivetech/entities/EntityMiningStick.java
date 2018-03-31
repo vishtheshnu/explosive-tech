@@ -36,7 +36,6 @@ public class EntityMiningStick extends EntityThrowable {
 	@Override
 	public void onUpdate(){
 		super.onUpdate();
-		this.world.spawnParticle(EnumParticleTypes.SNOWBALL, this.posX, this.posY, this.posZ, 0.0D, 0.0D, 0.0D);
 		if(world.isRemote)
 			return;
 		if(isExploding){
