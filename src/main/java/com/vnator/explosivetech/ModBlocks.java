@@ -2,6 +2,7 @@ package com.vnator.explosivetech;
 
 import com.vnator.explosivetech.blocks.BlockBase;
 import com.vnator.explosivetech.blocks.BlockTileEntity;
+import com.vnator.explosivetech.blocks.explosionbore.BlockExplosionBore;
 import com.vnator.explosivetech.blocks.miningcharge.BlockMiningCharge;
 import com.vnator.explosivetech.blocks.ores.PhosphorusOre;
 import com.vnator.explosivetech.blocks.ores.SaltpeterOre;
@@ -25,6 +26,7 @@ public class ModBlocks {
 	public static PhosphorusOre phosphorusOre = new PhosphorusOre();
 
 	public static BlockMiningCharge miningCharge = new BlockMiningCharge();
+	public static BlockExplosionBore explosionBore = new BlockExplosionBore();
 
     public static void register(RegistryEvent.Register<Block> event){
 		event.getRegistry().registerAll(blockList.toArray(new BlockBase[0]));
